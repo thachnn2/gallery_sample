@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GallerySample</string>
+    <string name="empty_list">Empty List</string>
+    <string name="require_setting">You need to allow necessary permissions in Settings manually</string>
+    <string name="require_permission_approved">Core fundamental are based on these permissions</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+</resources>
