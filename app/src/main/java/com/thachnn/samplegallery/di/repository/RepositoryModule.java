@@ -4,6 +4,8 @@ import com.thachnn.samplegallery.di.image.ImageManagerService;
 import com.thachnn.samplegallery.di.image.ImageManagerServiceImpl;
 import com.thachnn.samplegallery.di.repository.media.MediaRepository;
 import com.thachnn.samplegallery.di.repository.media.MediaRepositoryImpl;
+import com.thachnn.samplegallery.di.usecase.media.MediaUseCase;
+import com.thachnn.samplegallery.di.usecase.media.MediaUseCaseImpl;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,5 +22,6 @@ public class RepositoryModule {
     public ImageManagerService provideImageManagerService() {
         return new ImageManagerServiceImpl();
     }
+
 
 }

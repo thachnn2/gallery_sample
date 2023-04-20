@@ -7,7 +7,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.thachnn.samplegallery.di.DaggerAppProvider;
-import com.thachnn.samplegallery.di.repository.media.MediaRepository;
+import com.thachnn.samplegallery.di.usecase.media.MediaUseCase;
 import com.thachnn.samplegallery.model.MediaItem;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import javax.inject.Inject;
 public class MediaViewModel extends ViewModel {
 
     @Inject
-    MediaRepository repository;
+    MediaUseCase mediaUseCase;
     private final MutableLiveData<List<MediaItem>> mediaItems;
 
     public MediaViewModel() {
@@ -30,7 +30,7 @@ public class MediaViewModel extends ViewModel {
     }
 
     public void reload(Context context) {
-        this.mediaItems.setValue(this.repository.getAllMedia(context));
+        this.mediaItems.setValue(this.mediaUseCase.getAllMedia(context));
     }
 
     @Override
