@@ -49,3 +49,14 @@ MVVM with Clean Architecture is pretty good in such cases. It goes one step furt
 ### 3. ui package: The presentation of project
 ### 4. utils package: The other util such as string, datatime for project
 ### 4. viewmodel package: The view model class
+
+## How to Run
+1. Clone the project down to your computer.
+2. Open it in Android Studio (Android Studio 4.0 or newer are recommended)
+3. To build debug/release version you just need to click on the play button on Android Studio.
+5. Or just play with this [**apk**](https://github.com/thachnn2/gallery_sample/blob/main/docs/app-release.apk)
+
+## Demo
+<div align="center">
+    <img src="https://raw.githubusercontent.com/thachnn2/gallery_sample/main/docs/demo.gif" width=30% />
+</div>
