@@ -40,3 +40,12 @@ MVVM with Clean Architecture is pretty good in such cases. It goes one step furt
 <img src="https://raw.githubusercontent.com/thachnn2/gallery_sample/main/docs/project_structure.png" width="600" alt="project structure" />
 </div>
 
+## Project structure
+### 1. di package contains dependency injection classes that use Dagger
+- **image** Handling load image 
+- **repository** Handling load data
+- **usecase** The use case contain bussiness logic
+### 2. model package: The entity of project
+### 3. ui package: The presentation of project
+### 4. utils package: The other util such as string, datatime for project
+### 4. viewmodel package: The view model class
