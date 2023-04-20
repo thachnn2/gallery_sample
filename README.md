@@ -35,3 +35,8 @@ MVVM with Clean Architecture is pretty good in such cases. It goes one step furt
    
 5. our team can add new features even more quickly.
 
+## Architecture
+<div align="center">
+<img src="https://raw.githubusercontent.com/thachnn2/gallery_sample/main/docs/project_structure.png" width="600" alt="project structure" />
+</div>
+
