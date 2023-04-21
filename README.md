@@ -60,3 +60,26 @@ MVVM with Clean Architecture is pretty good in such cases. It goes one step furt
 <div align="center">
     <img src="https://raw.githubusercontent.com/thachnn2/gallery_sample/main/docs/demo.gif" width=30% />
 </div>
+## Tasks list
+
+1. Create new project and setup project with Java ✔
+
+2. Research and Implement UI Interface ✔
+
+3. Apply LiveData to project ✔
+
+4. Apply Dagger to project ✔
+
+5. Writing MediaRepository to query data ✔
+
+6. Create UseCase ✔
+
+7. Caching handling image with Glide  ✔
+
+8. Write page details of photo and video ✔
+
+9. Setup build release  ✔
+
+10. Write document  ✔
+
+11. Write unit test [NOT DONE YET]
