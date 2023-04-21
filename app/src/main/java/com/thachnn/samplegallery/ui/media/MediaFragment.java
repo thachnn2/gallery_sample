@@ -55,9 +55,7 @@ public class MediaFragment extends Fragment implements OnMediaItemClick {
         recyclerView.setLayoutManager(new GridLayoutManager(requireContext(), 3));
         recyclerView.setAdapter(adapter);
         progressBar = view.findViewById(R.id.progressBar);
-
         viewModel.getMediaItemLiveData().observe(getViewLifecycleOwner(), mediaItems -> {
-            Log.e("THACHNN", "MEDIA ITEMS CHANGE" + mediaItems.size());
             if (mediaItems.isEmpty()) {
                 emptyViewHolder.visible();
             } else {
@@ -81,7 +79,6 @@ public class MediaFragment extends Fragment implements OnMediaItemClick {
             fetchData();
         } else {
             PermissionUtils.requestPermission(this, (allGranted, grantedList, deniedList) -> {
-                Log.e("ThachNN","allGranted" + allGranted + "grantedList" +grantedList.size() + "deniedList" +deniedList.size() );
                 if (allGranted) {
                     fetchData();
                 } else {

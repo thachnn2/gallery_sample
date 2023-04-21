@@ -50,13 +50,12 @@ public class MediaRepositoryImpl extends MediaRepository {
                 String id = cursor.getString(idColumn);
                 String path = cursor.getString(pathColumn);
                 String type = Objects.equals(cursor.getString(typeColumn), String.valueOf(MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE))
-                        ? "image" : "video";
+                        ? MediaItem.TYPE_IMG : MediaItem.TYPE_VIDEO;
                 mediaItems.add(new MediaItem(id, path, type));
             }
 
             cursor.close();
         }
-        Log.e("ThachNN2", "ALL PHOTOS "+ mediaItems.size());
         return mediaItems;
     }
 }
